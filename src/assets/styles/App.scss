@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 13vh;
+    min-height: 70px;
+    
+    .HeaderTop{
+        padding:  0 2.4%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        .Izquierda{
+            width: 50%;
+            display: flex;
+            span{
+                color: white;
+                font-size: x-small;
+                letter-spacing: 2.7px;
+            }
+        }
+        .Derecha{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                padding: 0 10px;
+                text-decoration: none;
+                color: white;
+                font-size: x-small;
+                letter-spacing: 2.7px;
+            }
+        }
+    }
+    .HeaderBottom{
+        height: 70%;
+        width: 100%;
+        padding: 0 2.4%;
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        .HeaderIzquierda{
+            width: 30%;
+            display: flex;
+            p{
+                font-size: xx-large;
+                margin: 0;
+                letter-spacing: 3px;
+            }
+        }
+        .NavBar{
+            width: 60%;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                li{
+                    padding: 0 26px;
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: black;
+                        font-size: 1.1em;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+        .HeaderDerecha{
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+            i{
+                margin: 0 10px 0 15px;
+                font-size: 22px;
+                &:first-child{
+                    margin: 0 15px 0 0;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
