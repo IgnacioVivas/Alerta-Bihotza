@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
 function NavBar() {
     return (
@@ -26,7 +27,7 @@ function NavBar() {
                         </ul>
                     </nav>
                     <div className="HeaderDerecha">
-                        <i className="fas fa-shopping-bag"></i>
+                        <CartWidget></CartWidget>
                         <i className="fas fa-search"></i>
                     </div>
                 </div>
