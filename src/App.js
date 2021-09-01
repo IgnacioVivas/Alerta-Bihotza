@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <BootstrapCarousel></BootstrapCarousel>
-      <ItemListContainer></ItemListContainer>
+      <ItemListContainer greeting= {"Bienvenido, solo por hoy tenes un -15%!!"}></ItemListContainer>
     
     </div>
   );

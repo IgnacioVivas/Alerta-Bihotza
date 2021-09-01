@@ -1,20 +1,12 @@
 import React from 'react'
 
-const Greeting = ({texto}) => {
-    console.log(texto)
-    return(
-        <>
-        {alert(texto)}
-        </>
-        
-    )
 
-}
 
-function ItemListContainer() {
+function ItemListContainer(prop) {
+    console.log(prop)
     return (
         <div>
-            <Greeting texto={"Bienvenido, solo por hoy tenes un -15%!!"}/>
+             {alert(prop.greeting)}
         </div>
     )
 }
