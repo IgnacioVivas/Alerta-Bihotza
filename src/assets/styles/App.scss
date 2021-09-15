@@ -142,7 +142,7 @@ header{
             .cantidad{
                 border: none;
                 padding: 0 5px;
-                width: 30px;
+                width: 35px;
                 display: inline;
                 text-align: center;
                 font-weight: 600;
@@ -155,7 +155,7 @@ header{
             border-color: #1a1a1a;
             font-size: 13px;
             line-height: 62px;
-            height: 62px;
+            height: 62px;  // CAmbiar a 50px
             font-style: normal;
             font-weight: 500;
             background-color: #1a1a1a;
@@ -172,5 +172,155 @@ header{
     
 
 
+//estilos para ItemList
+
+.contenedor{
+    .contTituloYRaya{
+        margin: 90px 0 80px;
+        .contTitulo{
+            h2{
+                color: #1a1a1a;
+                font-size: 45px;
+                line-height: 45px;
+                font-style: normal;
+                font-weight: 300;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+            }
+        }
+        .contRaya{
+
+        }
+    }
+    .contListaProductos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 0;
+    }
+}
 
 
+//estilos para Item 
+
+.listaDeProductos{
+    margin-bottom: 70px;
+    .contSeccionProduct{
+        .contImg{
+            img{
+                width: 300px;
+                height: 556px;
+            }
+        }
+    }
+    .productCategories{
+        margin-top: 22px;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: #777;
+        }
+    }
+    .productInfo{
+        text-decoration: none;
+        h4{
+            font-size: 15px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0;
+            color: black;
+        }
+        .separadorTitlePrice{
+            background-color: #c2c2c2;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            height: 2px;
+            width: 70px;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+        .price{
+            color: #303030;
+            font-size: 15px;
+            line-height: 15px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+//Estilos para ItemDetail
+
+
+.contItemDetail{
+    .contenedor{
+        .contSeccionDescripcion{
+            display: flex;
+            .contImg{
+                margin-right: 30px;
+                width: 50%;
+                img{
+                    height: 1100px;
+                    width: 600px;
+                }
+            }
+            .contDescripcionYMeta{
+                width: 50%;
+                margin-left: 30px;
+                .contTitle{
+                    h1{
+                        text-align: left;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    .contPrecio{
+                        p{
+                            text-align: left;
+                            font-size: 21px;
+                            color: #bcbcbc;
+                            font-family: Raleway,sans-serif;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .contDescripcion{
+                        p{
+                            text-align: left;
+                            color: #777;
+                            font-size: 18px;
+                            line-height: 25px;
+                            font-style: normal;
+                            font-weight: 300;
+                        }
+                    }
+                    .productMeta{
+                        p{
+                            text-align: left;
+                            display: block;
+                            color: #333;
+                            font-weight: 700;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            span{
+                                font-weight: 300;
+                                color: #777;
+                                text-transform: none;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
