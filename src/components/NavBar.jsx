@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CartWidget from './CartWidget'
 
 function NavBar() {
     return (
         <header>
                 <div className="HeaderTop">
-                    <div className="Izquierda">
+                    <div className="Izquierda">                       
                         <span>OFRECEMOS ENVIO GRATIS A TODO EL MUNDO</span>
                     </div>
                     <div className="Derecha">
@@ -16,13 +17,15 @@ function NavBar() {
                 </div>
                 <div className="HeaderBottom">
                     <div className="HeaderIzquierda">
-                        <p>ALERTA BIHOTZA</p>
+                        <Link to={`/`}>
+                            <p>ALERTA BIHOTZA</p>
+                        </Link>
                     </div>
                     <nav className="NavBar">
                         <ul>
                             <li><a href="">inicio</a></li>
-                            <li><a href="">colección</a></li>
-                            <li><a href="">sobre nosotros</a></li>
+                            <li><Link to={`categoria/hombre`}>hombre</Link></li>
+                            <li><Link to={`categoria/mujer`}>mujer</Link></li>
                             <li><a href="">contacto</a></li>
                         </ul>
                     </nav>

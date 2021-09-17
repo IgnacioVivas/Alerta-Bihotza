@@ -1,33 +1,42 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Item({producto}) {
+function clickearProducto(event) {
+    console.log(event)
+}
+
+
+
+function Item({ producto }) {
 
     return (
-        <>  
-        
-            <li key= {producto.id} className="listaDeProductos">
+        <>
+            <Link> 
+                <li key={producto.id} className="listaDeProductos">
 
-                                            <div className="contSeccionProduct">
-                                                <a href="">
-                                                    <span className="contImg">
-                                                        <img src={producto.imagen} alt="" />
-                                                    </span>
-                                                </a>
-                                            </div>
+                    <div className="contSeccionProduct">
+                        <Link>
+                            <span className="contImg">
+                                <img src={producto.imagen} alt="" />
+                            </span>
+                        </Link>
+                    </div>
 
-                                            <div className="productCategories">
-                                                <a href="">{producto.categoria}</a>
-                                            </div>
+                    <div className="productCategories">
+                        <Link>{producto.categoria}</Link>
+                    </div>
 
-                                            <a href="" className="productInfo">
-                                                <h4>{producto.title} </h4>
-                                                <div className="separadorTitlePrice"></div>
-                                                <span className="price">{producto.precio} </span>
-                                            </a>
+                    <Link className="productInfo">
+                        <h4>{producto.title} </h4>
+                        <div className="separadorTitlePrice"></div>
+                        <span className="price">{producto.precio} </span>
+                    </Link>
 
-                                         </li>
-            
-                       
+                </li>
+            </Link>
+
+
+
         </>
     )
 }

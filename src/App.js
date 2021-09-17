@@ -5,10 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import BootstrapCarousel from './components/BootstrapCarousel';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
-import ItemList from './components/ItemList';
 import ItemDetailConteiner from './components/ItemDetailConteiner';
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 
 
@@ -16,13 +14,30 @@ import ItemDetailConteiner from './components/ItemDetailConteiner';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <BootstrapCarousel></BootstrapCarousel>
-      <ItemListContainer></ItemListContainer>
-      <ItemDetailConteiner></ItemDetailConteiner>
-    
-    </div>
+    <BrowserRouter>
+
+      <div className="App">
+
+
+        <NavBar />
+
+        <Switch>
+          <Route exact path='/'>
+            <BootstrapCarousel />
+            <ItemListContainer />
+          </Route>
+          <Route exact path='/categoria/:categoriaId'>
+            <ItemListContainer />
+          </Route>
+          <Route exact path='/detalle'>
+            <ItemDetailConteiner />
+          </Route>
+        </Switch>
+
+
+      </div>
+
+    </BrowserRouter>
   );
 }
 
