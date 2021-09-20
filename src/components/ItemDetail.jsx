@@ -1,7 +1,16 @@
 import React from 'react'
+import { useCartContext } from '../context/CartContext';
 import ItemCount from './ItemCount'
 
 function ItemDetail({ producto }) {
+
+    const {agregarAlCarrito} = useCartContext()
+
+    const onAdd= (count) =>{
+        console.log("Usted ha agregado" + " " +  count + " " + "prendas a su carro de compras");
+        agregarAlCarrito(producto, count)
+    }
+
     return (
         <div className="contItemDetail">
             <div className="contenedor">
@@ -18,7 +27,7 @@ function ItemDetail({ producto }) {
                             <div className= "contDescripcion">
                                 <p>{producto.descripcion}</p>
                             </div>
-                            <ItemCount></ItemCount>
+                            <ItemCount initial={1} stock={8} onAdd={onAdd} ></ItemCount>
                             <div className="productMeta">
                                 <p>Categoria: <span>{producto.categoria}</span></p>
                             </div>
@@ -34,3 +43,4 @@ function ItemDetail({ producto }) {
 }
 
 export default ItemDetail
+

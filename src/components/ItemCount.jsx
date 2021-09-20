@@ -1,32 +1,45 @@
 import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-function ItemCount() {
+function ItemCount({ initial, stock, onAdd }) {
 
-    const [aumentar, setContador] = useState(1)
+    const [count, setContador] = useState(initial)
+    const [cambiarBtn, setCambiarBtn] = useState(false)
 
-    const aumentarCart= () =>{
-        setContador(aumentar + 1)
-    }
-    const disminuirCart= () =>{
-        if (aumentar !== 1) {
-            setContador(aumentar - 1)
+    const aumentarCart = () => {
+        if (count < stock) {
+            setContador(count + 1)
         }
     }
-    const addToCart= () =>{
-        console.log("Usted ha agregado" + " " +  aumentar + " " + "prendas a su carro de compras");
+    const disminuirCart = () => {
+        if (count !== 1) {
+            setContador(count - 1)
+        }
+    }
+    const addToCart = () => {
+        onAdd(count)
+        setContador(initial)
+        setCambiarBtn(true)
     }
     
     return (
         <div className="itemCount">
-           <div className="contAddCart">
-               <input type="button" value="-" className="menos" onClick={disminuirCart}/>
-               <input type="text" step="1" min="1" name="cantidad" value={aumentar} className="cantidad"/>
-               <input type="button" value="+" className="mas" onClick={aumentarCart}/>
-           </div>
-           <div>
-               <button className="btnAddCart" onClick={addToCart}>ADD TO CART</button>
-           </div>
+            <div className="contAddCart">
+                <input type="button" value="-" className="menos" onClick={disminuirCart} />
+                <input type="text" step="1" min="1" name="cantidad" value={count} className="cantidad" />
+                <input type="button" value="+" className="mas" onClick={aumentarCart} />
+            </div>
+            <div>
+                {
+                    cambiarBtn ?
+                        <Link to={`/cart`}>
+                            <button className="btnAddCart">Terminar compra</button>
+                        </Link>
+                        :
+                        <button className="btnAddCart" onClick={addToCart}>ADD TO CART</button>
+                }
+            </div>
         </div>
     )
 }
