@@ -27,7 +27,7 @@ function Item({ producto }) {
                     <a className="productInfo">
                         <h4>{producto.title} </h4>
                         <div className="separadorTitlePrice"></div>
-                        <span className="price">{producto.precio} </span>
+                        <span className="price">${producto.precio} </span>
                     </a>
 
                 </li>

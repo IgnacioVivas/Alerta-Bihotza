@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useCartContext } from '../context/CartContext'
 import CartWidget from './CartWidget'
 
 function NavBar() {
+
+    const {iconCart} = useCartContext()
+        console.log(iconCart());
     return (
         <header>
                 <div className="HeaderTop">
@@ -30,7 +34,9 @@ function NavBar() {
                         </ul>
                     </nav>
                     <div className="HeaderDerecha">
-                        <CartWidget></CartWidget>
+                        <CartWidget>
+                        </CartWidget>
+                        <span>{iconCart()}</span>
                         <i className="fas fa-search"></i>
                     </div>
                 </div>

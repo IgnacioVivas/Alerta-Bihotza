@@ -87,12 +87,20 @@ header{
             width: 10%;
             display: flex;
             justify-content: flex-end;
+            position: relative;
             i{
                 margin: 0 10px 0 15px;
-                font-size: 22px;
+                font-size: 30px;
                 &:first-child{
                     margin: 0 15px 0 0;
                 }
+            }
+            span{
+                position: absolute;
+                right: 80px;
+                top: 9px;
+                color: white;
+                font-size: 14px;
             }
             
         }
@@ -323,4 +331,97 @@ header{
             }
         }
     }
+
+}
+
+
+
+
+
+//clases para carrito
+
+.cart{
+    margin-top: 150px;
+    p{
+        margin-bottom: 0px;
+    }
+    .contenedor{
+        .titulosCart{
+            display: flex;
+            align-items: center;
+            padding: 13px 10px;
+            font-size: 14px;
+            line-height: 1.571428571428571em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            padding: 10px 0 10px;
+            p{
+                color: #888;
+            }
+            i{
+
+            }
+            img{
+                display: block;
+                width: 66px;
+                height: 100px;
+            }
+            div{
+                .contadores{
+                    padding: 0;
+                    width: 17px;
+                    height: 17px;
+                    line-height: 17px;
+                    margin: 0;
+                    display: inline;
+                    font-size: 14px;
+                    border: 0;
+                    cursor: pointer;
+                    outline: 0;
+                    background-color: #bcbcbc;
+                    color: #fff;
+                    border-radius: 500px;
+                }
+                .cantidad{
+                    border: none;
+                    padding: 0 5px;
+                    width: 22px;
+                    display: inline;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #303030;
+                    font-size: 17px;
+                    background: 0 0;
+                }
+            }
+            
+        }
+        .tabla{
+            display: grid;
+            width: 100%;
+            border-right: 1px solid #c9c7c7;
+            border-left: 1px solid #c9c7c7;
+            border-bottom: 1px solid #c9c7c7;
+            grid-template-columns: 6% 6% 40% 16% 16% 16%;
+            &:first-child{
+                border-top: 1px solid #c9c7c7;
+            }
+        }
+        .totalTotal{
+            padding: 10px 0 10px;
+            p{
+                color: black;
+                text-transform: uppercase;
+                font-weight: 600;
+                 
+            }
+        }
+        
+    }
+
 }

@@ -34,13 +34,23 @@ function CartContextProvider({ children }) {
     const clear = () => {
         setCart([])
     }
-    const removeItem = (itemId) => {
-        const cartFilter = cart.filter(element => element.item.id !== itemId )
-        return setCart(cartFilter)
+    const removeItem = (event) => {
+        const itemId= event.target.id;
+        console.log(itemId);
+        const cartFilter = cart.filter((element) => element.item.id !== itemId)
+        return setCart(...cartFilter)   
+    }
+    const iconCart = () =>{
+        return cart.reduce((acumulador, valor) => acumulador + valor.quantity, 0)
     }
 
+    const precioTotal = () =>{
+        return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.precio)), 0)
+    }
+
+
     return (
-        <CartContext.Provider value={{ cart, agregarAlCarrito, clear, removeItem }}>
+        <CartContext.Provider value={{ cart, agregarAlCarrito, clear, removeItem, iconCart, precioTotal }}>
             {children}
         </CartContext.Provider>
     )
