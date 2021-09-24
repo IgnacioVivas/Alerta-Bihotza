@@ -12,7 +12,7 @@ function CartContextProvider({ children }) {
     const [cart, setCart] = useState([])
     console.log(cart);
     
-    function agregarAlCarrito(product, count) {
+    function addToCart(product, count) {
         if (isInCart(product.id)) { console.log("el cart ya existe");
             const actualizarCart = [...cart];
             actualizarCart.forEach((e) =>{
@@ -34,23 +34,23 @@ function CartContextProvider({ children }) {
     const clear = () => {
         setCart([])
     }
-    const removeItem = (event) => {
-        const itemId= event.target.id;
-        console.log(itemId);
+    const removeItem = (e) => {
+        let itemId = e.target.id;
         const cartFilter = cart.filter((element) => element.item.id !== itemId)
-        return setCart(...cartFilter)   
+        return setCart([...cartFilter])   
     }
     const iconCart = () =>{
         return cart.reduce((acumulador, valor) => acumulador + valor.quantity, 0)
     }
 
-    const precioTotal = () =>{
-        return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.precio)), 0)
+    const totalPrice = () =>{
+        console.log(cart);
+        return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.price)), 0)
     }
 
 
     return (
-        <CartContext.Provider value={{ cart, agregarAlCarrito, clear, removeItem, iconCart, precioTotal }}>
+        <CartContext.Provider value={{ cart, addToCart, clear, removeItem, iconCart, totalPrice }}>
             {children}
         </CartContext.Provider>
     )

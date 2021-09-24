@@ -8,26 +8,26 @@ function clickearProducto(event) {
 
 
 function Item({ producto }) {
-    const { id, imagen, categoria, title, precio, categoyId, descripcion } = producto
+    const { id, imagenId, category, title, price, categoyId, descripcion } = producto
      return (
         <>
             <Link to={`/detalle/${id}`}>
-                <li key={producto.id} className="listaDeProductos">
+                <li  className="listaDeProductos">
 
                     <div className="contSeccionProduct">
                             <span className="contImg">
-                                <img src={producto.imagen} alt="" />
+                                <img src={imagenId} alt="" />
                             </span>
                     </div>
 
                     <div className="productCategories">
-                        <Link>{producto.categoria}</Link>
+                        <Link>{category}</Link>
                     </div>
 
                     <a className="productInfo">
-                        <h4>{producto.title} </h4>
+                        <h4>{title} </h4>
                         <div className="separadorTitlePrice"></div>
-                        <span className="price">${producto.precio} </span>
+                        <span className="price">${price} </span>
                     </a>
 
                 </li>

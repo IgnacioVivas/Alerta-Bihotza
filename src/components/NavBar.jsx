@@ -6,7 +6,7 @@ import CartWidget from './CartWidget'
 function NavBar() {
 
     const {iconCart} = useCartContext()
-        console.log(iconCart());
+    
     return (
         <header>
                 <div className="HeaderTop">

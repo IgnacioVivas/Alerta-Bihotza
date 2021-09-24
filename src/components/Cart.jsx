@@ -5,7 +5,7 @@ import { useCartContext } from '../context/CartContext'
 
 function Cart() {
 
-    const { cart, precioTotal, removeItem, clear } = useCartContext()
+    const { cart, totalPrice, removeItem, clear } = useCartContext()
     console.log(cart);
 
     return (
@@ -22,16 +22,16 @@ function Cart() {
                 <>
                     {
                         cart.map((producto) => <div key={producto.item.id} className="item tabla">
-                            <i class="far fa-trash-alt"  id={producto.item.id} onClick={removeItem}></i>
+                            <i class="far fa-trash-alt" onClick={removeItem}></i>
                             <img src={producto.item.imagen} alt="" />
                             <p>{producto.item.title}</p>
-                            <p>${producto.item.precio}</p>
+                            <p>${producto.item.price}</p>
                             <div>
                                 <input type="button" value="-" className="contadores" />
                                 <input type="text" step="1" min="1" name="cantidad" value={producto.quantity} className="cantidad" />
                                 <input type="button" value="+" className="contadores" />
                             </div>
-                            <p>${precioTotal()}</p>
+                            <p>${totalPrice()}</p>
                         </div>)}
                 </>
                 <div className="tabla totalTotal" >
@@ -40,7 +40,7 @@ function Cart() {
                     <button onClick={clear}>clean car</button>
                     <p></p>
                     <p>cart totals</p>
-                    <p>${precioTotal()}</p>
+                    <p>${totalPrice()}</p>
                 </div>
             </div>
         </div>
