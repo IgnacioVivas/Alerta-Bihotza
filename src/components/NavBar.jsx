@@ -28,8 +28,8 @@ function NavBar() {
                     <nav className="NavBar">
                         <ul>
                             <li><a href="">inicio</a></li>
-                            <li><Link to={`categoria/hombre`}>hombre</Link></li>
-                            <li><Link to={`categoria/mujer`}>mujer</Link></li>
+                            <li><Link to={`/categoria/hombre`}>hombre</Link></li>
+                            <li><Link to={`/categoria/mujer`}>mujer</Link></li>
                             <li><a href="">contacto</a></li>
                         </ul>
                     </nav>

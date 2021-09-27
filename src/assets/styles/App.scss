@@ -425,3 +425,74 @@ header{
     }
 
 }
+
+
+
+
+//estilos checkout
+
+.contenedor{
+    .contCheckOut{
+        div{
+            margin-bottom: 8x;
+        }
+        input{
+            margin: 0px 10px;
+            padding: 15px 13px;
+            border: 0;
+            font-size: 13px;
+            line-height: 17px;
+            background-color: #e8f0fe;
+            color: #818181;
+            font-family: Raleway,sans-serif;
+            font-weight: 400;
+        }
+        label{
+            margin-left: 10px;
+            color: #303030;
+            font-size: 16px;
+            line-height: 35px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0;
+            text-align: left;
+        }
+        .nombreYapellido{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+        }
+        .emailYtelefono{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+        }
+        .contDireccion{
+            div{
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 80%;
+            }
+        }
+        .ciudadYlocalidad{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 26.7%;
+            }
+        }
+    }
+}

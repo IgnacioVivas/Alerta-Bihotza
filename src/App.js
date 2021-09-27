@@ -9,6 +9,7 @@ import ItemDetailConteiner from './components/ItemDetailConteiner';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import CartContextProvider from './context/CartContext';
 import Cart from './components/Cart';
+import CheckOut from './components/CheckOut';
 
 
 
@@ -28,7 +29,7 @@ function App() {
               <BootstrapCarousel />
               <ItemListContainer />
             </Route>
-            <Route exact path='/categoria/:categoriaId'>
+            <Route exact path='/categoria/:category'>
               <ItemListContainer />
             </Route>
             <Route exact path='/detalle/:id'>
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route exact path='/cart'>
               <Cart></Cart>
+            </Route>
+            <Route exact path='/checkout'>
+              <CheckOut></CheckOut>
             </Route>
           </Switch>
 

@@ -10,7 +10,6 @@ export const useCartContext = () => useContext(CartContext)
 function CartContextProvider({ children }) {
 
     const [cart, setCart] = useState([])
-    console.log(cart);
     
     function addToCart(product, count) {
         if (isInCart(product.id)) { console.log("el cart ya existe");
@@ -35,7 +34,11 @@ function CartContextProvider({ children }) {
         setCart([])
     }
     const removeItem = (e) => {
+        console.log("entro al remove");
+        
         let itemId = e.target.id;
+        console.log(e);
+        console.log(cart);
         const cartFilter = cart.filter((element) => element.item.id !== itemId)
         return setCart([...cartFilter])   
     }
@@ -44,7 +47,7 @@ function CartContextProvider({ children }) {
     }
 
     const totalPrice = () =>{
-        console.log(cart);
+        
         return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.price)), 0)
     }
 

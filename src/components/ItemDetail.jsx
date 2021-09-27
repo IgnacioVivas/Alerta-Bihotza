@@ -4,7 +4,7 @@ import ItemCount from './ItemCount'
 
 function ItemDetail({ producto }) {
 
-    const { id, imagenId, category, title, price, categoyId, description } = producto
+    const { id, imagenId, category, title, price, categoyId, description, stock } = producto
 
     const {addToCart} = useCartContext()
 
@@ -29,7 +29,7 @@ function ItemDetail({ producto }) {
                             <div className= "contDescripcion">
                                 <p>{description}</p>
                             </div>
-                            <ItemCount initial={1} stock={8} onAdd={onAdd} ></ItemCount>
+                            <ItemCount initial={1} stock={stock} onAdd={onAdd} ></ItemCount>
                             <div className="productMeta">
                                 <p>Categoria: <span>{category}</span></p>
                             </div>

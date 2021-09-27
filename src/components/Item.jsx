@@ -1,11 +1,6 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
-function clickearProducto(event) {
-    console.log(event)
-}
-
-
 
 function Item({ producto }) {
     const { id, imagenId, category, title, price, categoyId, descripcion } = producto

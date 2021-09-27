@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useCartContext } from '../context/CartContext'
 
 
@@ -10,6 +11,14 @@ function Cart() {
 
     return (
         <div className="cart">
+            { cart.length === 0 ?
+            <div>
+                <h2>No hay productos</h2>
+                <Link to={`/`}>
+                <button>volver al home</button>
+                </Link>
+            </div>
+            :
             <div className="contenedor">
                 <div className="titulosCart tabla">
                     <p></p>
@@ -22,7 +31,7 @@ function Cart() {
                 <>
                     {
                         cart.map((producto) => <div key={producto.item.id} className="item tabla">
-                            <i class="far fa-trash-alt" onClick={removeItem}></i>
+                            <i class="far fa-trash-alt" id={producto.item.id} onClick={removeItem}></i>
                             <img src={producto.item.imagen} alt="" />
                             <p>{producto.item.title}</p>
                             <p>${producto.item.price}</p>
@@ -42,7 +51,11 @@ function Cart() {
                     <p>cart totals</p>
                     <p>${totalPrice()}</p>
                 </div>
+                <Link to= {`/checkout`}>
+                    <button>CheckOut</button>
+                </Link>
             </div>
+            }
         </div>
     )
 }
