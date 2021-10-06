@@ -14,9 +14,9 @@ function NavBar() {
                         <span>OFRECEMOS ENVIO GRATIS A TODO EL MUNDO</span>
                     </div>
                     <div className="Derecha">
-                        <a href="">INSTAGRAM</a>
-                        <a href="">FACEBOOK</a>
-                        <a href="">TWITTER</a>
+                        <a href="https://www.instagram.com/">INSTAGRAM</a>
+                        <a href="https://www.facebook.com/">FACEBOOK</a>
+                        <a href="https://twitter.com/">TWITTER</a>
                     </div>
                 </div>
                 <div className="HeaderBottom">
@@ -27,17 +27,17 @@ function NavBar() {
                     </div>
                     <nav className="NavBar">
                         <ul>
-                            <li><a href="">inicio</a></li>
+                            <li><Link to={'/'}>inicio</Link></li>
                             <li><Link to={`/categoria/hombre`}>hombre</Link></li>
                             <li><Link to={`/categoria/mujer`}>mujer</Link></li>
-                            <li><a href="">contacto</a></li>
+                            <li><Link to=''>contacto</Link></li>
                         </ul>
                     </nav>
                     <div className="HeaderDerecha">
                         <CartWidget>
                         </CartWidget>
                         <span>{iconCart()}</span>
-                        <i className="fas fa-search"></i>
+                        <i className="ri-search-line"></i>
                     </div>
                 </div>
             

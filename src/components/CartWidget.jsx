@@ -2,7 +2,7 @@ import React from 'react'
 
 function CartWidget() {
     return (
-        <i className="fas fa-shopping-bag"></i>
+        <i className="ri-shopping-bag-line"></i>
     )
 }
 

@@ -1,3 +1,4 @@
+import Button from '@restart/ui/esm/Button'
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -26,9 +27,9 @@ function ItemCount({ initial, stock, onAdd }) {
     return (
         <div className="itemCount">
             <div className="contAddCart">
-                <input type="button" value="-" className="menos" onClick={disminuirCart} />
-                <input type="text" step="1" min="1" name="cantidad" value={count} className="cantidad" />
-                <input type="button" value="+" className="mas" onClick={aumentarCart} />
+                <input type="button" defaultValue= "-" className= "menos" onClick= {disminuirCart} />
+                <button step= "1" min= "1" name= "cantidad" className="cantidad">{count}</button>
+                <input type="button" defaultValue= "+" className= "mas" onClick= {aumentarCart} />
             </div>
             <div>
                 {

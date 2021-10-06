@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Item({ producto }) {
-    const { id, imagenId, category, title, price, categoyId, descripcion } = producto
+    const { id, imagenId, category, title, price } = producto
      return (
         <>
             <Link to={`/detalle/${id}`}>
@@ -16,14 +16,14 @@ function Item({ producto }) {
                     </div>
 
                     <div className="productCategories">
-                        <Link>{category}</Link>
+                        <span>{category}</span>
                     </div>
 
-                    <a className="productInfo">
+                    <div className="productInfo">
                         <h4>{title} </h4>
                         <div className="separadorTitlePrice"></div>
                         <span className="price">${price} </span>
-                    </a>
+                    </div>
 
                 </li>
                 </Link>

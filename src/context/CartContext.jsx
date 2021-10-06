@@ -26,6 +26,10 @@ function CartContextProvider({ children }) {
         }
     }
 
+    function edditCart(product) {
+        const actualizarCart = [...cart];
+        setCart(actualizarCart)
+    }
     const isInCart = (id) => {
         return cart.find(element => element.item.id === parseInt(id))
         
@@ -46,14 +50,13 @@ function CartContextProvider({ children }) {
         return cart.reduce((acumulador, valor) => acumulador + valor.quantity, 0)
     }
 
-    const totalPrice = () =>{
-        
+    const totalPrice = () =>{ 
         return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.price)), 0)
     }
-
-
+console.log(cart);
+    
     return (
-        <CartContext.Provider value={{ cart, addToCart, clear, removeItem, iconCart, totalPrice }}>
+        <CartContext.Provider value={{ cart, addToCart, clear, removeItem, iconCart, totalPrice, edditCart}}>
             {children}
         </CartContext.Provider>
     )
