@@ -45,5 +45,4 @@ function ItemDetailConteiner() {
         </>
     )
 }
-
 export default ItemDetailConteiner
