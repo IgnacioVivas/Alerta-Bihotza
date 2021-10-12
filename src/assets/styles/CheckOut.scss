@@ -1,0 +1,184 @@
+.contenedor{
+    .contCheckOut{
+        .contNoHayProductos{
+            margin-top: 200px;
+            h5{
+                color: #777;
+                font-size: 14px;
+                line-height: 25px;
+                font-style: normal;
+                font-weight: 300;
+            }
+            button{
+                color: #fff;
+                border-color: #1a1a1a;
+                font-size: 13px;
+                line-height: 62px;
+                height: 62px;
+                font-style: normal;
+                font-weight: 500;
+                background-color: #1a1a1a;
+                border-radius: 0px;
+                -moz-border-radius: 0px;
+                -webkit-border-radius: 0px;
+                letter-spacing: 3.6px;
+                text-transform: uppercase;
+                border-width: 0px;
+                padding-left: 33px;
+                padding-right: 33px;
+            }
+        }
+        .tituloForm{
+            display: flex;
+            width: 79%;
+            margin-left: auto;
+            margin-right: auto;
+            h2{
+                color: #303030;
+                font-size: 20px;
+                line-height: 35px;
+                font-style: normal;
+                font-weight: 300;
+                letter-spacing: 0px;
+                text-transform: none;
+            }
+        }
+        div{
+            margin-bottom: 8x;
+        }
+        input{
+            margin: 0px 10px;
+            padding: 15px 13px;
+            border: 0;
+            font-size: 13px;
+            line-height: 17px;
+            background-color: #e8f0fe;
+            color: #818181;
+            font-family: Raleway,sans-serif;
+            font-weight: 400;
+        }
+        label{
+            margin-left: 10px;
+            color: #303030;
+            font-size: 16px;
+            line-height: 35px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0;
+            text-align: left;
+        }
+        .nombreYapellido{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+        }
+        .emailYtelefono{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+        }
+        .contDireccion{
+            div{
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 80%;
+            }
+        }
+        .ciudadYlocalidad{
+            display: flex;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 26.7%;
+            }
+        }
+        .contDetalleCompra{
+            
+            
+            h2{
+                color: #303030;
+                font-size: 20px;
+                line-height: 35px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 0px;
+                text-transform: none;
+            }
+            .titulos{
+                width: 79%;
+                margin-left: auto;
+                margin-right: auto;
+                border-top: 2px solid #e6e6e6;
+                border-bottom: 1px solid #e6e6e6;
+                border-right: 1px solid #e6e6e6;
+                border-left: 1px solid #e6e6e6;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin-bottom: 10px;
+                h3{
+                    padding: 13px 10px;
+                    font-size: 14px;
+                    line-height: 1.571428571428571em;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-family: Raleway,sans-serif;
+                    font-weight: 600;
+                    margin: 0
+                }
+
+            }
+            .descripcionCompra{
+                width: 79%;
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                p{
+                    color: #888;
+                }
+                &:first-child{
+                    display: flex;
+                    margin-top: 50px;
+                }
+            }
+            .ultimaLinea{
+                border-bottom: 1px solid #e6e6e6;
+            }
+            button{
+                width: 75%;
+                justify-self: center;
+                color: #fff;
+                border-color: #1a1a1a;
+                font-size: 13px;
+                line-height: 62px;    
+                height: 62px;
+                font-style: normal;
+                font-weight: 500;
+                background-color: #1a1a1a;
+                border-radius: 0px;
+                -moz-border-radius: 0px;
+                -webkit-border-radius: 0px;
+                letter-spacing: 3.6px;
+                text-transform: uppercase;
+                border-width: 0px;
+                padding-left: 33px;
+                padding-right: 33px;
+            }
+            .contRealizarCompra{
+                margin-top: 30px;
+            }
+        }
+    }
+}

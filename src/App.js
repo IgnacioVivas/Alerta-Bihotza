@@ -8,8 +8,8 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailConteiner from './components/ItemDetailConteiner';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import CartContextProvider from './context/CartContext';
-import Cart from './components/Cart';
-import CheckOut from './components/CheckOut';
+import CheckOutConteiner from './components/CheckOutConteiner';
+import CartConteiner from './components/CartConteiner';
 
 
 
@@ -36,10 +36,10 @@ function App() {
               <ItemDetailConteiner />
             </Route>
             <Route exact path='/cart'>
-              <Cart></Cart>
+              <CartConteiner></CartConteiner>
             </Route>
             <Route exact path='/checkout'>
-              <CheckOut></CheckOut>
+              <CheckOutConteiner></CheckOutConteiner>
             </Route>
           </Switch>
 

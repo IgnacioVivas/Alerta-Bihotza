@@ -1,0 +1,52 @@
+.listaDeProductos{
+    margin-bottom: 70px;
+    .contSeccionProduct{
+        .contImg{
+            img{
+                width: 300px;
+                height: 556px;
+            }
+        }
+    }
+    .productCategories{
+        margin-top: 22px;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: #777;
+        }
+    }
+    .productInfo{
+        text-decoration: none;
+        h4{
+            font-size: 15px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0;
+            color: black;
+        }
+        .separadorTitlePrice{
+            background-color: #c2c2c2;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            height: 2px;
+            width: 70px;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+        .price{
+            color: #303030;
+            font-size: 15px;
+            line-height: 15px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+    }
+}

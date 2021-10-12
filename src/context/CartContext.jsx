@@ -12,7 +12,7 @@ function CartContextProvider({ children }) {
     const [cart, setCart] = useState([])
     
     function addToCart(product, count) {
-        if (isInCart(product.id)) { console.log("el cart ya existe");
+        if (isInCart(product.id)) { 
             const actualizarCart = [...cart];
             actualizarCart.forEach((e) =>{
                 if (e.item.id === product.id) {
@@ -22,7 +22,6 @@ function CartContextProvider({ children }) {
             setCart(actualizarCart)
         } else {
              setCart([...cart, { item: product, quantity: count }])
-            // esto dentro del array me copia uno por uno.. me mantiene mi listado y me pushea uno 
         }
     }
 
@@ -38,11 +37,8 @@ function CartContextProvider({ children }) {
         setCart([])
     }
     const removeItem = (e) => {
-        console.log("entro al remove");
         
         let itemId = e.target.id;
-        console.log(e);
-        console.log(cart);
         const cartFilter = cart.filter((element) => element.item.id !== itemId)
         return setCart([...cartFilter])   
     }
@@ -53,7 +49,6 @@ function CartContextProvider({ children }) {
     const totalPrice = () =>{ 
         return cart.reduce((acumulador, valor) => (acumulador + (valor.quantity * valor.item.price)), 0)
     }
-console.log(cart);
     
     return (
         <CartContext.Provider value={{ cart, addToCart, clear, removeItem, iconCart, totalPrice, edditCart}}>

@@ -4,45 +4,9 @@ import { useCartContext } from '../context/CartContext'
 
 
 
-function Cart() {
+function Cart({ aumentarCart, disminuirCart }) {
 
-    const { cart, totalPrice, removeItem, clear, edditCart } = useCartContext()
-    console.log(cart);
-
-    ////////////////
-    
-    const aumentarCart = (e) => {
-        const id = e.target.id;
-
-        const actualizarCart = [...cart];
-        for (let i = 0; i < actualizarCart.length; i++) {
-            if (actualizarCart[i].item.id === id) {
-                if (actualizarCart[i].item.stock > actualizarCart[i].quantity  ) {
-                    actualizarCart[i].quantity = actualizarCart[i].quantity +1;
-                    edditCart(actualizarCart[i]);
-                }
-               
-                break;
-            }
-        }
-    }
-    const disminuirCart = (e) => {
-        const id = e.target.id;
-
-        const actualizarCart = [...cart];
-        for (let i = 0; i < actualizarCart.length; i++) {
-            if (actualizarCart[i].item.id === id) {
-                if (actualizarCart[i].quantity !== 0 ) {
-                    actualizarCart[i].quantity = actualizarCart[i].quantity -1;
-                    edditCart(actualizarCart[i]);
-                }
-               
-                break;
-            }
-        }
-    }
-    ////////////////
-
+    const { cart, totalPrice, removeItem, clear } = useCartContext()
 
     return (
         <div className="cart">
