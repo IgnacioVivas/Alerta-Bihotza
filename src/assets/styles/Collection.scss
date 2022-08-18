@@ -1,0 +1,58 @@
+
+.container-fluid{
+    padding-bottom: 90px;
+    .cont-spring{
+        padding: 130px 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cont-summer{
+        padding: 110px 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .row{
+        h2{
+            color: #1a1a1a;
+            font-size: 45px;
+            line-height: 45px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0px;
+        }
+        .raya{
+            background-color: #c2c2c2;
+            height: 2px;
+            position: relative;
+            width: 70px;
+            display: block;
+            margin: 20px auto 30px;
+        }
+        h3{
+            color: #303030;
+            font-size: 20px;
+            line-height: 35px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0px;
+            text-transform: none;
+            margin-bottom: 50px
+        }
+        button{
+            background-color: black;
+            border: none;
+            a{
+                color: white;
+                font-size: 13px;
+                line-height: 62px;
+                height: 62px;
+                font-weight: 500;
+                padding-left: 33px;
+                padding-right: 33px;
+                text-decoration: none;
+            }
+        }
+    }
+}

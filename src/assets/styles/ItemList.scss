@@ -1,4 +1,6 @@
-.contenedor{
+.cont{
+    background-color: white !important;
+    width: 90% !important;
     .contTituloYRaya{
         margin: 90px 0 80px;
         .contTitulo{
@@ -15,10 +17,5 @@
         .contRaya{
 
         }
-    }
-    .contListaProductos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding-left: 0;
     }
 }

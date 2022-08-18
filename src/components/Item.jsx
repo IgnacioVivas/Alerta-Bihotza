@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom'
 
 
 function Item({ producto }) {
+    // window.scroll({
+    //     top: 100,
+    //     left: 100,
+    //     behavior: 'smooth'
+    //   });
     const { id, imagenId, category, title, price } = producto
      return (
         <>
-            <Link to={`/detalle/${id}`}>
+            <Link to={`/detalle/${id}`} className="col-12 col-sm-6 col-lg-3" style={{textDecoration: 'none'}} >
                 <li  className="listaDeProductos">
 
                     <div className="contSeccionProduct">

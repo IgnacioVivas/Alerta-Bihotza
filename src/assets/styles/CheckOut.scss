@@ -157,7 +157,8 @@
                 border-bottom: 1px solid #e6e6e6;
             }
             button{
-                width: 75%;
+                width: 35%;
+                min-width: 230px;
                 justify-self: center;
                 color: #fff;
                 border-color: #1a1a1a;
@@ -178,6 +179,7 @@
             }
             .contRealizarCompra{
                 margin-top: 30px;
+               
             }
         }
     }

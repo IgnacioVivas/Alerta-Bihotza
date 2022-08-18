@@ -97,7 +97,7 @@ function CheckOut({ formSubmit, infoForm, formData }) {
                                 <p>Total</p>
                                 <p>${totalPrice()}</p>
                             </div>
-                            <div className="descripcionCompra contRealizarCompra">
+                            <div className=" contRealizarCompra">
                                 <p></p>
                                 <button>realizar pedido</button>
                             </div>

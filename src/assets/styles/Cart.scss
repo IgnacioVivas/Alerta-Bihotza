@@ -31,103 +31,77 @@
         }
     }
     .contenedor{
-        .titulosCart{
+        margin-bottom: 105px;
+        .contProduct{          
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: 1px solid #e8e8e8;
+                border-left: 1px solid #e8e8e8;
+                border-right: 1px solid #e8e8e8;
+                padding: 10px;
+                #imgCart{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .productDescription{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .p{
+                        color: #c1c2c5 !important;
+                    }
+                    input{
+                        background-color: #f0f5f8;
+                        border: none;
+                        border-radius: 100%;
+                        width: 21px;
+                        color: grey;
+                        font-weight: bold;
+                    }
+                }
+            
+        }
+        .titulosTablaCart{
             display: flex;
             align-items: center;
-            padding: 13px 10px;
+            justify-content: center;
             font-size: 14px;
             line-height: 1.571428571428571em;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 600;
+            border-top: 1px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            padding: 10px;
         }
-        .item{
-            display: flex;
-            align-items: center;
-            padding: 10px 0 10px;
-            p{
-                color: #888;
-            }
-            i{
-                font-size: 25px;
-            }
-            img{
-                display: block;
-                width: 66px;
-                height: 100px;
-            }
-            div{
-                .contadores{
-                    padding: 0;
-                    width: 17px;
-                    height: 17px;
-                    line-height: 17px;
-                    margin: 0;
-                    display: inline;
-                    font-size: 14px;
-                    border: 0;
-                    cursor: pointer;
-                    outline: 0;
-                    background-color: #bcbcbc;
-                    color: #fff;
-                    border-radius: 500px;
-                }
-                .cantidad{
-                    border: none;
-                    padding: 0 5px;
-                    width: 22px;
-                    display: inline;
-                    text-align: center;
-                    font-weight: 600;
-                    color: #303030;
-                    font-size: 17px;
-                    background: 0 0;
-                }
-            }
-            
-        }
+       
         .tabla{
-            display: grid;
-            width: 100%;
-            border-right: 1px solid #c9c7c7;
-            border-left: 1px solid #c9c7c7;
-            border-bottom: 1px solid #c9c7c7;
-            grid-template-columns: 6% 6% 40% 16% 16% 16%;
-            &:first-child{
-                border-top: 1px solid #c9c7c7;
-            }
-            button{
-                width: 50%;
-                justify-self: center;
-                color: #fff;
-                border-color: #1a1a1a;
-                font-size: 13px;
-                line-height: 62px;
-                height: 62px;
-                font-style: normal;
-                font-weight: 500;
-                background-color: #1a1a1a;
-                border-radius: 0px;
-                -moz-border-radius: 0px;
-                -webkit-border-radius: 0px;
-                letter-spacing: 3.6px;
-                text-transform: uppercase;
-                border-width: 0px;
-                padding-left: 33px;
-                padding-right: 33px;
-                margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 2px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            padding: 10px;
+            .contUltimaLinea{
+                display: flex;
+                justify-content: center;
+                p{
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                button{
+                    margin-top: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
             }
         }
-        .totalTotal{
-            padding: 10px 0 10px;
-            p{
-                color: black;
-                text-transform: uppercase;
-                font-weight: 600;
-                align-self: center;
-                 
-            }
-        }
+      
         button{
             color: #fff;
             border-color: #1a1a1a;
@@ -151,4 +125,33 @@
         
     }
 
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .titulosTablaCart{
+        p{
+            letter-spacing: 0px;
+        }
+        #pCart{
+            display: none;
+        }
+    }
+    .tabla{
+        .contP{
+            display: none;
+        }
+        .contUltimaLinea{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .contProduct{
+        #imgCart{
+            display: none;
+        }
+        
+    
+}
 }

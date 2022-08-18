@@ -10,6 +10,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import CartContextProvider from './context/CartContext';
 import CheckOutConteiner from './components/CheckOutConteiner';
 import CartConteiner from './components/CartConteiner';
+import Collection from './components/Collection';
+import News from './components/News';
+import Footer from './components/Footer';
 
 
 
@@ -23,11 +26,12 @@ function App() {
 
 
           <NavBar />
-
           <Switch>
             <Route exact path='/'>
               <BootstrapCarousel />
               <ItemListContainer />
+              <Collection></Collection>
+              <News></News>
             </Route>
             <Route exact path='/categoria/:category'>
               <ItemListContainer />
@@ -42,7 +46,7 @@ function App() {
               <CheckOutConteiner></CheckOutConteiner>
             </Route>
           </Switch>
-
+          <Footer></Footer>
 
         </div>
 
