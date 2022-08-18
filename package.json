@@ -2,7 +2,7 @@
   "name": "alerta-bihotza",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ignaciovivas.github.io/alerta-bihotza",
+  "homepage": "https://IgnacioVivas.github.io/Alerta-Bihotza",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@testing-library/jest-dom": "^5.14.1",
