@@ -10,7 +10,7 @@ function Cart({ aumentarCart, disminuirCart }) {
       {cart.length === 0 ? (
         <div className="contNoHayProductos">
           <h5>Your cart is empty.</h5>
-          <Link to={`/`}>
+          <Link to={`/Alerta-Bihotza`}>
             <button>Return to the store</button>
           </Link>
         </div>
