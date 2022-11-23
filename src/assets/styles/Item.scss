@@ -1,10 +1,14 @@
+
 .listaDeProductos{
     margin-bottom: 70px;
+    span{
+        color: black;
+    }
     .contSeccionProduct{
         .contImg{
             img{
-                width: 300px;
-                height: 556px;
+                width: 100%;
+                
             }
         }
     }

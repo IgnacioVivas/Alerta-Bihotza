@@ -5,8 +5,6 @@ import { useParams } from 'react-router-dom';
 import { getFirestore } from '../service/GetFireBase';
 import Spinner from 'react-bootstrap/Spinner'
 
-
-
 function ItemListContainer() {
 
     const [loanding, setLoanding] = useState(true)
