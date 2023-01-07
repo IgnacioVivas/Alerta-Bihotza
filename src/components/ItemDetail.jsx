@@ -1,7 +1,6 @@
-import React from "react";
-import { useCartContext } from "../context/CartContext";
-import ItemCount from "./ItemCount";
-import banner from "../assets/images/banner.jpg";
+import { useCartContext } from '../context/CartContext';
+import ItemCount from './ItemCount';
+import Banner from './Banner';
 
 function ItemDetail({ producto }) {
   const { imagenId, category, title, price, description, stock } = producto;
@@ -13,32 +12,26 @@ function ItemDetail({ producto }) {
   };
 
   return (
-    <div className="contItemDetail">
-      <div className="container-fluid contBanner">
-        <div className="row" style={{ backgroundImage: `url(${banner})` }}>
-          <div className="col">
-            <h2>Store</h2>
-          </div>
-        </div>
-      </div>
+    <div className='contItemDetail'>
+      <Banner />
 
-      <div className="container-fluid contenedor">
-        <div className="row contSeccionDescripcion">
-          <div className="col-12 col-lg-5">
-            <div className="contImg">
-              <img src={imagenId} alt="" />
+      <div className='container-fluid contenedor'>
+        <div className='row contSeccionDescripcion'>
+          <div className='col-12 col-lg-5'>
+            <div className='contImg'>
+              <img src={imagenId} alt='' />
             </div>
           </div>
-          <div className="col-12 col-lg-6 contTitle">
+          <div className='col-12 col-lg-6 contTitle'>
             <h1>{title}</h1>
-            <div className="contPrecio">
+            <div className='contPrecio'>
               <p>${price}</p>
             </div>
-            <div className="contDescripcion">
+            <div className='contDescripcion'>
               <p>{description}</p>
             </div>
             <ItemCount initial={1} stock={stock} onAdd={onAdd}></ItemCount>
-            <div className="productMeta">
+            <div className='productMeta'>
               <p>
                 Category: <span>{category}</span>
               </p>

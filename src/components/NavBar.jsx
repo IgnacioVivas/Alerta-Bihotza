@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useCartContext } from "../context/CartContext";
-import CartWidget from "./CartWidget";
-import { useState } from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useCartContext } from '../context/CartContext';
+import CartWidget from './CartWidget';
+import { useState } from 'react';
 
 function NavBar() {
   const { iconCart } = useCartContext();
@@ -11,21 +11,21 @@ function NavBar() {
 
   const openMenu = () => {
     if (click === true) {
-      document.getElementById("navBar").style.left = "-1000px";
+      document.getElementById('navBar').style.left = '-1000px';
     } else {
-      document.getElementById("navBar").style.left = "0px";
+      document.getElementById('navBar').style.left = '0px';
     }
     setClick(!click);
   };
 
   return (
     <header>
-      <div className="header-top">
+      <div className='header-top'>
         <div>
-          <div className="cont-propaganda">
+          <div className='cont-propaganda'>
             <span>WE OFFER FREE SHIPPING WORLDWIDE</span>
           </div>
-          <div className="cont-sociales">
+          <div className='cont-sociales'>
             <span>FACEBOOK</span>
             <span>INSTAGRAM</span>
             <span>TWITTER</span>
@@ -33,21 +33,21 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className="nav-container">
-        <div className="nav-wrapper">
-          <div className="icon-logo">
+      <div className='nav-container'>
+        <div className='nav-wrapper'>
+          <div className='icon-logo'>
             <Link to={`/Alerta-Bihotza`}>
               <span>ALERTA BIHOTZA</span>
             </Link>
           </div>
-          <div className="icon-hamburguesa">
+          <div className='icon-hamburguesa'>
             {click ? (
-              <i class="ri-close-line" onClick={openMenu}></i>
+              <i class='ri-close-line' onClick={openMenu}></i>
             ) : (
-              <i className="ri-menu-5-fill" onClick={openMenu}></i>
+              <i className='ri-menu-5-fill' onClick={openMenu}></i>
             )}
           </div>
-          <nav id="navBar">
+          <nav id='navBar'>
             <ul>
               <li>
                 <Link to={`/Alerta-Bihotza`}>home</Link>
@@ -59,14 +59,14 @@ function NavBar() {
                 <Link to={`/categoria/mujer`}>woman</Link>
               </li>
               <li>
-                <Link to="">contact</Link>
+                <Link to=''>contact</Link>
               </li>
-              <li className="search-cart">
+              <li className='search-cart'>
                 <Link to={`/cart`}>
                   <CartWidget></CartWidget>
                   <span>{iconCart()}</span>
                 </Link>
-                <i className="ri-search-line"></i>
+                <i className='ri-search-line'></i>
               </li>
             </ul>
           </nav>

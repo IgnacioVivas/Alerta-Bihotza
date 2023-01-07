@@ -1,0 +1,22 @@
+.contBanner {
+  background-color: initial;
+  .row {
+    height: 50vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        color: white;
+        font-size: 45px;
+        line-height: 50px;
+        font-style: normal;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
