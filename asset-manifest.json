@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Alerta-Bihotza/static/css/main.9bd0150b.chunk.css",
-    "main.js": "/Alerta-Bihotza/static/js/main.596df12b.chunk.js",
-    "main.js.map": "/Alerta-Bihotza/static/js/main.596df12b.chunk.js.map",
-    "runtime-main.js": "/Alerta-Bihotza/static/js/runtime-main.80e9b311.js",
-    "runtime-main.js.map": "/Alerta-Bihotza/static/js/runtime-main.80e9b311.js.map",
+    "main.css": "/Alerta-Bihotza/static/css/main.c66dc35e.chunk.css",
+    "main.js": "/Alerta-Bihotza/static/js/main.d94bbdfd.chunk.js",
+    "main.js.map": "/Alerta-Bihotza/static/js/main.d94bbdfd.chunk.js.map",
+    "runtime-main.js": "/Alerta-Bihotza/static/js/runtime-main.7ab1d37e.js",
+    "runtime-main.js.map": "/Alerta-Bihotza/static/js/runtime-main.7ab1d37e.js.map",
     "static/css/2.818011ed.chunk.css": "/Alerta-Bihotza/static/css/2.818011ed.chunk.css",
-    "static/js/2.136a43ae.chunk.js": "/Alerta-Bihotza/static/js/2.136a43ae.chunk.js",
-    "static/js/2.136a43ae.chunk.js.map": "/Alerta-Bihotza/static/js/2.136a43ae.chunk.js.map",
-    "static/js/3.b143f2ef.chunk.js": "/Alerta-Bihotza/static/js/3.b143f2ef.chunk.js",
-    "static/js/3.b143f2ef.chunk.js.map": "/Alerta-Bihotza/static/js/3.b143f2ef.chunk.js.map",
+    "static/js/2.4925f7fa.chunk.js": "/Alerta-Bihotza/static/js/2.4925f7fa.chunk.js",
+    "static/js/2.4925f7fa.chunk.js.map": "/Alerta-Bihotza/static/js/2.4925f7fa.chunk.js.map",
+    "static/js/3.4cfc44d6.chunk.js": "/Alerta-Bihotza/static/js/3.4cfc44d6.chunk.js",
+    "static/js/3.4cfc44d6.chunk.js.map": "/Alerta-Bihotza/static/js/3.4cfc44d6.chunk.js.map",
     "index.html": "/Alerta-Bihotza/index.html",
     "static/css/2.818011ed.chunk.css.map": "/Alerta-Bihotza/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.9bd0150b.chunk.css.map": "/Alerta-Bihotza/static/css/main.9bd0150b.chunk.css.map",
-    "static/js/2.136a43ae.chunk.js.LICENSE.txt": "/Alerta-Bihotza/static/js/2.136a43ae.chunk.js.LICENSE.txt",
+    "static/css/main.c66dc35e.chunk.css.map": "/Alerta-Bihotza/static/css/main.c66dc35e.chunk.css.map",
+    "static/js/2.4925f7fa.chunk.js.LICENSE.txt": "/Alerta-Bihotza/static/js/2.4925f7fa.chunk.js.LICENSE.txt",
     "static/media/b-inspired-by-italian-style.41d92402.jpg": "/Alerta-Bihotza/static/media/b-inspired-by-italian-style.41d92402.jpg",
     "static/media/b-josh-woodward-already-there.2703e7d9.jpg": "/Alerta-Bihotza/static/media/b-josh-woodward-already-there.2703e7d9.jpg",
     "static/media/b-transitions-in-ux-design.7901293e.jpg": "/Alerta-Bihotza/static/media/b-transitions-in-ux-design.7901293e.jpg",
@@ -25,10 +25,10 @@
     "static/media/slide-3.f0f3dad0.jpg": "/Alerta-Bihotza/static/media/slide-3.f0f3dad0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.80e9b311.js",
+    "static/js/runtime-main.7ab1d37e.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.136a43ae.chunk.js",
-    "static/css/main.9bd0150b.chunk.css",
-    "static/js/main.596df12b.chunk.js"
+    "static/js/2.4925f7fa.chunk.js",
+    "static/css/main.c66dc35e.chunk.css",
+    "static/js/main.d94bbdfd.chunk.js"
   ]
 }
