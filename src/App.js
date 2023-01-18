@@ -13,6 +13,7 @@ import Collection from './components/Collection';
 import News from './components/News';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route exact path='/checkout'>
               <CheckOutConteiner></CheckOutConteiner>
+            </Route>
+            <Route exact path='/contact'>
+              <Contact />
             </Route>
           </Switch>
           <Footer></Footer>

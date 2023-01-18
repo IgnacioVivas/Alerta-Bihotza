@@ -59,7 +59,7 @@ function NavBar() {
                 <Link to={`/categoria/mujer`}>woman</Link>
               </li>
               <li>
-                <Link to=''>contact</Link>
+                <Link to={`/contact`}>contact</Link>
               </li>
               <li className='search-cart'>
                 <Link to={`/cart`}>

@@ -13,6 +13,8 @@ function Banner() {
       setShowTitle('hombre');
     } else if (currentPath.includes('/categoria/mujer')) {
       setShowTitle('mujer');
+    } else if (currentPath.includes('/contact')) {
+      setShowTitle('contact us');
     } else {
       setShowTitle('store');
     }
